@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 
 import com.societymanagement.Dao.ExpenceMasterDao;
 import com.societymanagement.Entity.ExpenceMaster;
-import com.societymanagement.Entity.Member;
 @Service
 public class ExpenceMasterImpl implements ExpenceMasterDao {
 
@@ -41,10 +40,10 @@ public class ExpenceMasterImpl implements ExpenceMasterDao {
 	}
 
 	public boolean deleteExpence(int expenceId) {
-		ExpenceMaster society = null;
+		ExpenceMaster expenceMaster = null;
 		entityManager.getTransaction().begin();
-		society = entityManager.find(ExpenceMaster.class, expenceId);
-		entityManager.remove(society);
+		expenceMaster = entityManager.find(ExpenceMaster.class, expenceId);
+		entityManager.remove(expenceMaster);
 		entityManager.getTransaction().commit();
 		return true;
 	}

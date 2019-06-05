@@ -51,11 +51,11 @@ public class FundCategoryTest {
 	 * }
 	 */
 
-	/*@Test
+	@Test
 	public void delete() {
-		FundCategory fundCategory = new FundCategory();
-		fundCategory = fundCategoryImpl.getFund(1);
+
+		fundCategoryImpl.getFund(1);
 		assertEquals(true, fundCategoryImpl.deleteFund(1));
-	}*/
+	}
 
 }
