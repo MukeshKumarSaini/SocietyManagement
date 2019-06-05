@@ -11,7 +11,7 @@ public class ExpenceMaster {
 	private int expenceId;
 	private String expenceName;
 	private int expenceAmmount;
-	private boolean isReguler;
+	private String expenceType;
 	private String comment;
 
 	public int getExpenceId() {
@@ -38,12 +38,12 @@ public class ExpenceMaster {
 		this.expenceAmmount = expenceAmmount;
 	}
 
-	public boolean isReguler() {
-		return isReguler;
+	public String isReguler() {
+		return expenceType;
 	}
 
-	public void setReguler(boolean isReguler) {
-		this.isReguler = isReguler;
+	public void setReguler(String expenceType) {
+		this.expenceType = expenceType;
 	}
 
 	public String getComment() {

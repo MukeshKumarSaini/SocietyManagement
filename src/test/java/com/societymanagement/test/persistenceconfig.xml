@@ -19,7 +19,7 @@
 
 	<bean id="entityManagerFactory" class="javax.persistence.Persistence"
 		factory-method="createEntityManagerFactory">
-	 <constructor-arg value="jpaconfig" /> 
+	 <constructor-arg value="testconfig" /> 
 	</bean>
 
 	

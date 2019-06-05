@@ -20,8 +20,6 @@ public class SocietyMasterTest {
 	@Autowired
 	private SocietyMasterImpl societymaster;
 
-	
-
 	/*
 	 * @Test public void add() throws Exception { Society society = new Society();
 	 * 
@@ -35,13 +33,13 @@ public class SocietyMasterTest {
 	 * society = societymaster.getSociety(2); assertEquals("radha vihar",
 	 * society.getSocietyName()); }
 	 */
-	/*@Test
-	public void getAll() throws Exception {
-		List<SocietyMaster> society = new ArrayList<SocietyMaster>();
-		society = societymaster.allSociety();
-		assertEquals(1, society.size());
-
-	}*/
+	/*
+	 * @Test public void getAll() throws Exception { List<SocietyMaster> society =
+	 * new ArrayList<SocietyMaster>(); society = societymaster.allSociety();
+	 * assertEquals(1, society.size());
+	 * 
+	 * }
+	 */
 	/*
 	 * @Test public void update() throws Exception { Society society = new
 	 * Society(); society = societymaster.getSociety(1);
@@ -51,10 +49,10 @@ public class SocietyMasterTest {
 	 * ); }
 	 */
 
-	/*
-	 * @Test public void delete() throws Exception { Society society = new
-	 * Society(); society = societymaster.getSociety(1); assertEquals(true,
-	 * societymaster.deleteSociety(1));
-	 */
+	@Test
+	public void delete() throws Exception {
+		societymaster.getSociety(1);
+		assertEquals(true, societymaster.deleteSociety(1));
+	}
 
 }

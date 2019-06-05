@@ -22,17 +22,13 @@ public class MemberTest {
 	@Autowired
 	MemberImpl memberimpl;
 
-	/*@Test
-	public void add() {
-		Member member = new Member();
-		member.setMemberId(1);
-		member.setMemberName("deepak");
-		member.setMemberAdd("bharatpur");
-		member.setEmail("deepak@gmail.com");
-		member.setMobileNo(123456);
-		member.setSocietyId(1);
-		assertEquals(true, memberimpl.addMember(member));
-	}*/
+	/*
+	 * @Test public void add() { Member member = new Member();
+	 * member.setMemberId(1); member.setMemberName("deepak");
+	 * member.setMemberAdd("bharatpur"); member.setEmail("deepak@gmail.com");
+	 * member.setMobileNo(123456); member.setSocietyId(1); assertEquals(true,
+	 * memberimpl.addMember(member)); }
+	 */
 
 	/*
 	 * @Test public void get() throws Exception { Member member = new Member();
@@ -41,12 +37,12 @@ public class MemberTest {
 	 */
 
 	/*
-	  @Test public void getAll() throws Exception { List<Member> member = new
-	  ArrayList<Member>(); member = memberimpl.allMember(); assertEquals(1,
-	  member.size());
-	  
-	  }*/
-	 
+	 * @Test public void getAll() throws Exception { List<Member> member = new
+	 * ArrayList<Member>(); member = memberimpl.allMember(); assertEquals(1,
+	 * member.size());
+	 * 
+	 * }
+	 */
 
 	/*
 	 * @Test public void update() { Member member = new Member(); member =
@@ -58,8 +54,10 @@ public class MemberTest {
 	 * }
 	 */
 
-	/*
-	 * @Test public void delete() { Member member = new Member(); member =
-	 * memberimpl.getMember(1); assertEquals(true, memberimpl.deleteMember(1)); }
-	 */
+	@Test
+	public void delete() {
+		memberimpl.getMember(1);
+		assertEquals(true, memberimpl.deleteMember(1));
+	}
+
 }

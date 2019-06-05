@@ -52,11 +52,11 @@ public class FacilityTest {
 	 * }
 	 */
 
-	/*@Test
+	@Test
 	public void delete() {
-		Facility facility = new Facility();
-		facility = facilityimpl.getFacility(1);
+
+		facilityimpl.getFacility(1);
 		assertEquals(true, facilityimpl.deleteFacility(1));
-	}*/
+	}
 
 }
