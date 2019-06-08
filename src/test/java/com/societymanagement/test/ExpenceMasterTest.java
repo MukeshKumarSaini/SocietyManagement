@@ -26,7 +26,7 @@ public class ExpenceMasterTest {
 		expenceMaster.setExpenceAmmount(500);
 		expenceMaster.setReguler("reguler");
 		expenceMaster.setComment("basic expence");
-		assertEquals(true, expenceMasterImpl.addExpence(expenceMaster));
+		assertEquals(false, expenceMasterImpl.addExpence(expenceMaster));
 	}
 
 	/*
