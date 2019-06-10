@@ -13,7 +13,7 @@ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_0.xsd">
 
 		<properties>
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3308/society" />
+				value="jdbc:mysql://localhost:3306/society" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password"
 				value="password" />
@@ -33,7 +33,7 @@ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_0.xsd">
 
 		<properties>
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3308/testsociety" />
+				value="jdbc:mysql://localhost:3306/society" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password"
 				value="password" />
