@@ -12,15 +12,11 @@ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_0.xsd">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
 		<properties>
-			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/society" />
+			<property name="javax.persistence.jdbc.url"	value="jdbc:mysql://localhost:3306/society" />
 			<property name="javax.persistence.jdbc.user" value="root" />
-			<property name="javax.persistence.jdbc.password"
-				value="password" />
-			<property name="javax.persistence.jdbc.driver"
-				value="com.mysql.jdbc.Driver" />
-			<property name="hibernate.dialect"
-				value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+			<property name="javax.persistence.jdbc.password" value="password" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 			<property name="hibernate.show_sql " value="true" />
 		</properties>
@@ -29,21 +25,15 @@ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_0.xsd">
 	<persistence-unit name="testconfig"
 		transaction-type="RESOURCE_LOCAL">
 
-		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-
-		<properties>
-			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/society" />
-			<property name="javax.persistence.jdbc.user" value="root" />
-			<property name="javax.persistence.jdbc.password"
-				value="password" />
-			<property name="javax.persistence.jdbc.driver"
-				value="com.mysql.jdbc.Driver" />
-			<property name="hibernate.dialect"
-				value="org.hibernate.dialect.MySQL5InnoDBDialect" />
-			<property name="hibernate.hbm2ddl.auto" value="update" />
-			<property name="hibernate.show_sql " value="true" />
-		</properties>
+		 <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:testSociety;DB_CLOSE_DELAY=-1"/>
+			<property name="javax.persistence.jdbc.user" value="sa"/>
+			<property name="javax.persistence.jdbc.password" value=""/>
+			<property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+			<property name="hibernate.hbm2ddl.auto" value="create"/>
+        
+    </properties>
 	</persistence-unit>
 </persistence>
  
