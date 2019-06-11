@@ -50,7 +50,7 @@ public class FacilityTest {
 	 * facilityimpl.updateFacility(facility, 1));
 	 * 
 	 * }
-	 */
+	
 
 	@Test
 	public void delete() {
@@ -58,5 +58,5 @@ public class FacilityTest {
 		facilityimpl.getFacility(1);
 		assertEquals(true, facilityimpl.deleteFacility(1));
 	}
-
+ */
 }
