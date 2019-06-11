@@ -38,11 +38,13 @@ public class ExpenceMaster {
 		this.expenceAmmount = expenceAmmount;
 	}
 
-	public String isReguler() {
+	
+
+	public String getExpenceType() {
 		return expenceType;
 	}
 
-	public void setReguler(String expenceType) {
+	public void setExpenceType(String expenceType) {
 		this.expenceType = expenceType;
 	}
 
